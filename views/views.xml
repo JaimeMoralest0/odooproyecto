@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="odooproyecto.list">
+      <field name="name">odooproyecto list</field>
+      <field name="model">odooproyecto.odooproyecto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="odooproyecto.action_window">
+      <field name="name">odooproyecto window</field>
+      <field name="res_model">odooproyecto.odooproyecto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="odooproyecto.action_server">
+      <field name="name">odooproyecto server</field>
+      <field name="model_id" ref="model_odooproyecto_odooproyecto"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="odooproyecto" id="odooproyecto.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="odooproyecto.menu_1" parent="odooproyecto.menu_root"/>
+    <menuitem name="Menu 2" id="odooproyecto.menu_2" parent="odooproyecto.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="odooproyecto.menu_1_list" parent="odooproyecto.menu_1"
+              action="odooproyecto.action_window"/>
+    <menuitem name="Server to list" id="odooproyecto" parent="odooproyecto.menu_2"
+              action="odooproyecto.action_server"/>
+-->
+  </data>
+</odoo>
